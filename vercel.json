@@ -1,0 +1,6 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/ae-ai-playbook", "destination": "/ae-ai-playbook.html" }
+  ]
+}
