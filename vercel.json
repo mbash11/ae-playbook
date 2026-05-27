@@ -1,6 +1,7 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/ae-ai-playbook", "destination": "/ae-ai-playbook.html" }
+    { "source": "/ae-ai-playbook", "destination": "/ae-ai-playbook.html" },
+    { "source": "/ai-advantage-ebook", "destination": "/ai-advantage-ebook.html" }
   ]
 }
