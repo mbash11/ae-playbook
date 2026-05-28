@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The AI playbook for SaaS AEs. Copy-paste AI prompts for account executives covering post-call follow-up, pre-call research, and pipeline review. Built by two AEs who closed $60M in SaaS contracts. No code. Free tools.">
+<meta name="keywords" content="AI playbook for SaaS AEs, AI prompts for account executives, how to use AI for CRM updates, post call follow up AI sales, pre call research AI sales, AI tools for salespeople, SaaS AE productivity, sales AI prompts, CRM automation for salespeople, AI sales playbook, ChatGPT for account executives, Claude for sales, AI follow-up emails sales, SaaS sales automation">
+<meta name="author" content="SaaS AI Playbook">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.saasaiplaybook.com">
+
+<!-- Open Graph — controls how the page looks when shared on LinkedIn, Facebook, Slack -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.saasaiplaybook.com">
+<meta property="og:title" content="AI Playbook for SaaS AEs — AI Prompts for Account Executives">
+<meta property="og:description" content="AI prompts for account executives that automate post-call follow-up, pre-call research and pipeline review. The AI playbook for SaaS AEs. No code. Free tools. 30 minutes to set up.">
+<meta property="og:image" content="https://www.saasaiplaybook.com/ae-playbook-og.png">
+<meta property="og:site_name" content="SaaS AI Playbook">
+
+<!-- Twitter/X card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The AE's AI Playbook — Stop Doing Admin. Start Closing Deals.">
+<meta name="twitter:description" content="Three copy-paste AI systems that give SaaS AEs 10+ hours of selling time back every week. No code. Free tools. 30 minutes to set up.">
+<meta name="twitter:image" content="https://www.saasaiplaybook.com/ae-playbook-og.png">
+
+<!-- Structured data — helps Google understand exactly what this page is -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "The AE's AI Playbook",
+  "description": "Three copy-paste AI systems that give SaaS account executives 10+ hours of selling time back every week. No code. Free tools. Built by two AEs who have closed $60M in SaaS contracts.",
+  "url": "https://www.saasaiplaybook.com",
+  "image": "https://www.saasaiplaybook.com/ae-playbook-og.png",
+  "brand": {
+    "@type": "Brand",
+    "name": "SaaS AI Playbook"
+  },
+  "category": "Business & Productivity",
+  "sku": "AE-AI-PLAYBOOK-001",
+  "mpn": "AE-AI-001",
+  "offers": {
+    "@type": "Offer",
+    "price": "47.00",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://buy.stripe.com/fZubJ10EnfY6bGg6vE1Jm00",
+    "priceValidUntil": "2027-12-31",
+    "itemCondition": "https://schema.org/NewCondition",
+    "seller": {
+      "@type": "Organization",
+      "name": "SaaS AI Playbook",
+      "url": "https://www.saasaiplaybook.com"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "3",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewBody": "This playbook held up a mirror to exactly how much selling time I was losing to admin every week. More importantly it gave me a clear and structured path to take it back. The ROI was obvious within days.",
+      "author": {
+        "@type": "Person",
+        "name": "Enterprise Account Executive, Databricks"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2026-05-01"
+    },
+    {
+      "@type": "Review",
+      "reviewBody": "The prompt library gave me the clarity and structure I had been missing to get real results from AI tools built specifically for software sales.",
+      "author": {
+        "@type": "Person",
+        "name": "Commercial Account Representative, Amazon Web Services"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2026-05-01"
+    },
+    {
+      "@type": "Review",
+      "reviewBody": "I am not a technical person by nature and this was built for people like me. No code, no complexity, just systems that work. The book paid for itself ten times over in the first week.",
+      "author": {
+        "@type": "Person",
+        "name": "Strategic Account Director, MongoDB"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2026-05-01"
+    }
+  ]
+}
+</script>
+<title>AI Playbook for SaaS AEs — AI Prompts for Account Executives | SaaS AI Playbook</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --black:#080807;
+  --ink:#0f0e0c;
+  --dark:#171614;
+  --mid:#252320;
+  --border:#2e2c28;
+  --muted:#6a6860;
+  --faint:#9a9890;
+  --light:#e0dcd4;
+  --paper:#f5f2ec;
+  --white:#faf8f4;
+  --green:#22a35a;
+  --green-soft:#4dc97e;
+  --green-pale:#0a2016;
+  --green-light:#e8f8ef;
+  --red:#e83a3a;
+  --serif:'Barlow Condensed',system-ui,sans-serif;
+  --body:'Barlow',system-ui,sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--light);font-family:var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 48px;display:flex;align-items:center;justify-content:space-between;background:rgba(8,8,7,0.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.05)}
+.nav-brand{font-family:var(--serif);font-size:14px;font-weight:700;color:var(--faint);letter-spacing:0.08em;text-transform:uppercase}
+.nav-cta{background:var(--green);color:white;border:none;padding:9px 22px;font-family:var(--serif);font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;border-radius:2px;cursor:pointer;transition:background 0.2s,transform 0.15s}
+.nav-cta:hover{background:var(--green-soft);transform:translateY(-1px)}
+
+/* ── HERO ── */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:120px 48px 80px;position:relative;overflow:hidden}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(34,163,90,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(34,163,90,0.04) 1px,transparent 1px);background-size:48px 48px;pointer-events:none}
+.hero-glow{position:absolute;top:-200px;right:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(34,163,90,0.12) 0%,transparent 70%);pointer-events:none}
+.hero-inner{max-width:960px;margin:0 auto;width:100%;position:relative;z-index:1}
+.hero-kicker{display:inline-flex;align-items:center;gap:10px;background:rgba(34,163,90,0.1);border:1px solid rgba(34,163,90,0.25);padding:7px 16px;border-radius:2px;margin-bottom:32px}
+.hero-kicker-dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.5;transform:scale(0.8)}}
+.hero-kicker-text{font-family:var(--mono);font-size:11px;letter-spacing:0.14em;color:var(--green);text-transform:uppercase}
+.hero-h1{font-family:var(--serif);font-size:88px;font-weight:900;line-height:0.95;color:rgba(255,255,255,0.75);letter-spacing:-0.01em;margin-bottom:28px}
+.hero-h1 .acc{color:var(--green)}
+.hero-h1 .dim{color:rgba(255,255,255,0.75)}
+.hero-sub{font-size:20px;color:rgba(255,255,255,0.5);line-height:1.6;max-width:580px;font-weight:300;margin-bottom:48px}
+.hero-sub strong{color:rgba(255,255,255,0.8);font-weight:500}
+.hero-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.btn-primary{display:inline-flex;align-items:center;gap:12px;background:var(--green);color:white;border:none;padding:18px 36px;font-family:var(--serif);font-size:16px;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;border-radius:2px;cursor:pointer;transition:all 0.2s;text-decoration:none}
+.btn-primary:hover{background:var(--green-soft);transform:translateY(-2px);box-shadow:0 12px 40px rgba(34,163,90,0.3)}
+.btn-primary svg{width:18px;height:18px;transition:transform 0.2s}
+.btn-primary:hover svg{transform:translateX(3px)}
+.btn-ghost{font-size:14px;color:var(--muted);font-family:var(--body);font-weight:400;cursor:pointer;border:none;background:none;padding:8px 0;transition:color 0.2s;text-decoration:underline;text-underline-offset:4px}
+.btn-ghost:hover{color:var(--light)}
+.hero-proof{display:flex;align-items:center;gap:32px;margin-top:56px;padding-top:40px;border-top:1px solid var(--border);flex-wrap:wrap}
+.proof-stat{text-align:center}
+.proof-num{font-family:var(--serif);font-size:36px;font-weight:800;color:var(--white);line-height:1}
+.proof-num .g{color:var(--green)}
+.proof-label{font-size:12px;color:var(--muted);margin-top:4px;font-family:var(--mono);letter-spacing:0.06em;text-transform:uppercase}
+.proof-div{width:1px;height:48px;background:var(--border)}
+
+/* ── PAIN ── */
+.pain{padding:100px 48px;background:var(--ink);position:relative;overflow:hidden}
+.pain::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,transparent,var(--green),transparent)}
+.section-inner{max-width:960px;margin:0 auto;width:100%}
+.section-label{font-family:var(--mono);font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green);margin-bottom:16px}
+.section-title{font-family:var(--serif);font-size:56px;font-weight:800;line-height:1.05;color:rgba(255,255,255,0.75);margin-bottom:20px;letter-spacing:-0.01em}
+.section-title .dim{color:rgba(255,255,255,0.75)}
+.pain-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:48px}
+.pain-card{background:var(--dark);padding:32px 36px;position:relative;overflow:hidden;transition:background 0.2s}
+.pain-card:hover{background:var(--mid)}
+.pain-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--border);transition:background 0.2s}
+.pain-card:hover::before{background:var(--green)}
+.pain-icon{font-family:var(--serif);font-size:40px;font-weight:900;color:rgba(255,255,255,0.06);line-height:1;margin-bottom:16px}
+.pain-title{font-family:var(--serif);font-size:20px;font-weight:700;color:var(--white);margin-bottom:10px;line-height:1.2}
+.pain-body{font-size:14px;color:var(--muted);line-height:1.65}
+
+/* ── CREDIBILITY ── */
+.cred{padding:100px 48px;background:var(--black);position:relative}
+.cred-inner{max-width:960px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.cred-left{}
+.cred-stat-block{background:var(--dark);border:1px solid var(--border);border-radius:3px;padding:40px;margin-top:40px;position:relative;overflow:hidden}
+.cred-stat-block::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,var(--green),transparent)}
+.cred-big-num{font-family:var(--serif);font-size:72px;font-weight:900;color:var(--green);line-height:1;letter-spacing:-0.02em}
+.cred-big-sub{font-size:16px;color:rgba(255,255,255,0.5);margin-top:8px;line-height:1.5;font-weight:300}
+.cred-right{}
+.cred-quote{font-size:20px;color:rgba(255,255,255,0.7);line-height:1.65;font-weight:300;font-style:italic;margin-bottom:24px;position:relative;padding-left:24px}
+.cred-quote::before{content:'';position:absolute;left:0;top:6px;bottom:6px;width:2px;background:var(--green)}
+.cred-attr{font-family:var(--mono);font-size:11px;letter-spacing:0.1em;color:var(--muted);text-transform:uppercase}
+.cred-points{margin-top:36px;display:flex;flex-direction:column;gap:14px}
+.cred-point{display:flex;align-items:flex-start;gap:12px;font-size:14px;color:rgba(255,255,255,0.6);line-height:1.5}
+.cred-check{width:18px;height:18px;border-radius:50%;background:var(--green-pale);border:1px solid var(--green);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.cred-check svg{width:10px;height:10px;stroke:var(--green);stroke-width:2.5}
+
+/* ── SYSTEMS ── */
+.systems{padding:100px 48px;background:var(--ink)}
+.systems-inner{max-width:960px;margin:0 auto}
+.systems-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;margin-top:56px}
+.sys-card{background:var(--dark);padding:36px 32px;position:relative;transition:background 0.2s}
+.sys-card:hover{background:var(--mid)}
+.sys-num{font-family:var(--mono);font-size:10px;letter-spacing:0.16em;color:var(--green);margin-bottom:20px;text-transform:uppercase}
+.sys-title{font-family:var(--serif);font-size:24px;font-weight:800;color:var(--white);line-height:1.15;margin-bottom:12px}
+.sys-desc{font-size:13px;color:var(--muted);line-height:1.65;margin-bottom:20px}
+.sys-saves{display:inline-flex;align-items:center;gap:7px;background:var(--green-pale);border:1px solid rgba(34,163,90,0.25);padding:6px 12px;border-radius:2px}
+.sys-saves-text{font-family:var(--mono);font-size:10px;letter-spacing:0.1em;color:var(--green);text-transform:uppercase}
+.sys-items{margin-top:20px;display:flex;flex-direction:column;gap:8px}
+.sys-item{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:rgba(255,255,255,0.45);line-height:1.5}
+.sys-dot{width:4px;height:4px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:6px;opacity:0.6}
+
+/* ── ROI CALCULATOR ── */
+.roi{padding:100px 48px;background:var(--black);position:relative;overflow:hidden}
+.roi-glow{position:absolute;bottom:-300px;left:50%;transform:translateX(-50%);width:800px;height:600px;background:radial-gradient(circle,rgba(34,163,90,0.08) 0%,transparent 70%);pointer-events:none}
+.roi-inner{max-width:720px;margin:0 auto;position:relative;z-index:1}
+.roi-card{background:var(--dark);border:1px solid var(--border);border-radius:3px;padding:56px;margin-top:48px;position:relative;overflow:hidden}
+.roi-card::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,transparent,var(--green),transparent)}
+.roi-inputs{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-bottom:40px}
+.roi-field label{display:block;font-family:var(--mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.roi-field input{width:100%;background:var(--mid);border:1px solid var(--border);color:var(--white);font-family:var(--serif);font-size:24px;font-weight:700;padding:14px 18px;border-radius:2px;outline:none;transition:border-color 0.2s;-moz-appearance:textfield}
+.roi-field input::-webkit-outer-spin-button,.roi-field input::-webkit-inner-spin-button{-webkit-appearance:none}
+.roi-field input:focus{border-color:var(--green)}
+.roi-results{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;margin-bottom:40px}
+.roi-result{background:var(--mid);padding:24px 20px;text-align:center}
+.roi-result.highlight{background:var(--green-pale);border:1px solid rgba(34,163,90,0.3)}
+.roi-result-val{font-family:var(--serif);font-size:36px;font-weight:900;color:var(--white);line-height:1}
+.roi-result.highlight .roi-result-val{color:var(--green)}
+.roi-result-label{font-family:var(--mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-top:6px;line-height:1.4}
+.roi-conclusion{background:rgba(34,163,90,0.08);border:1px solid rgba(34,163,90,0.2);border-radius:2px;padding:20px 24px;text-align:center}
+.roi-conclusion-text{font-size:15px;color:rgba(255,255,255,0.75);line-height:1.55}
+.roi-conclusion-text strong{color:var(--green);font-weight:600}
+
+/* ── WHAT'S INSIDE ── */
+.inside{padding:100px 48px;background:var(--ink)}
+.inside-inner{max-width:960px;margin:0 auto}
+.inside-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:56px;align-items:start}
+.inside-list{display:flex;flex-direction:column;gap:0}
+.inside-row{display:flex;gap:20px;padding:20px 0;border-bottom:1px solid var(--border);align-items:flex-start;transition:all 0.2s;cursor:default}
+.inside-row:first-child{padding-top:0}
+.inside-row:last-child{border-bottom:none}
+.inside-row:hover .inside-row-title{color:var(--green)}
+.inside-row-num{font-family:var(--mono);font-size:10px;letter-spacing:0.1em;color:var(--green);width:44px;flex-shrink:0;padding-top:3px}
+.inside-row-title{font-family:var(--serif);font-size:17px;font-weight:700;color:var(--white);line-height:1.2;transition:color 0.2s}
+.inside-row-desc{font-size:13px;color:var(--muted);margin-top:4px;line-height:1.5}
+.inside-prompts{background:var(--dark);border:1px solid var(--border);border-radius:3px;padding:36px;position:relative;overflow:hidden}
+.inside-prompts::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,var(--green),transparent)}
+.inside-prompts-title{font-family:var(--serif);font-size:20px;font-weight:700;color:var(--white);margin-bottom:20px}
+.prompt-tag{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:0.1em;background:var(--green-pale);color:var(--green);border:1px solid rgba(34,163,90,0.25);padding:5px 10px;border-radius:2px;margin:4px 4px 4px 0;text-transform:uppercase}
+.inside-bonus{background:rgba(34,163,90,0.06);border:1px solid rgba(34,163,90,0.2);border-radius:2px;padding:20px 24px;margin-top:24px}
+.inside-bonus-label{font-family:var(--mono);font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:var(--green);margin-bottom:8px}
+.inside-bonus-text{font-size:13px;color:rgba(255,255,255,0.6);line-height:1.55}
+
+/* ── BUY BLOCK ── */
+.buy{padding:100px 48px;background:var(--black);position:relative;overflow:hidden}
+.buy-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:700px;height:700px;background:radial-gradient(circle,rgba(34,163,90,0.1) 0%,transparent 65%);pointer-events:none}
+.buy-inner{max-width:640px;margin:0 auto;position:relative;z-index:1;text-align:center}
+.buy-eyebrow{font-family:var(--mono);font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--green);margin-bottom:16px}
+.buy-title{font-family:var(--serif);font-size:64px;font-weight:900;line-height:0.95;color:var(--white);margin-bottom:16px;letter-spacing:-0.01em}
+.buy-sub{font-size:16px;color:rgba(255,255,255,0.45);font-weight:300;line-height:1.55;max-width:440px;margin:0 auto 40px}
+.buy-card{background:var(--dark);border:1px solid var(--border);border-radius:3px;padding:48px;position:relative;overflow:hidden;margin-bottom:20px}
+.buy-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,transparent,var(--green),transparent)}
+.buy-price-wrap{display:flex;align-items:flex-start;justify-content:center;gap:4px;margin-bottom:8px}
+.buy-currency{font-family:var(--serif);font-size:28px;font-weight:700;color:var(--green);margin-top:12px}
+.buy-price{font-family:var(--serif);font-size:88px;font-weight:900;line-height:1;color:var(--white);letter-spacing:-0.03em}
+.buy-price-note{font-size:13px;color:var(--muted);margin-bottom:36px;font-family:var(--mono);letter-spacing:0.06em;text-transform:uppercase}
+.buy-includes{display:flex;flex-direction:column;gap:10px;margin-bottom:40px;text-align:left}
+.buy-include{display:flex;align-items:flex-start;gap:12px;font-size:14px;color:rgba(255,255,255,0.6);line-height:1.45}
+.buy-include-icon{width:18px;height:18px;border-radius:50%;background:var(--green-pale);border:1px solid var(--green);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.buy-include-icon svg{width:10px;height:10px;stroke:var(--green);stroke-width:2.5}
+.buy-btn{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;background:var(--green);color:white;border:none;padding:20px;font-family:var(--serif);font-size:18px;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;border-radius:2px;cursor:pointer;transition:all 0.2s;margin-bottom:14px}
+.buy-btn:hover{background:var(--green-soft);transform:translateY(-2px);box-shadow:0 16px 48px rgba(34,163,90,0.35)}
+.buy-btn svg{width:20px;height:20px}
+.buy-guarantee{font-size:12px;color:var(--muted);font-family:var(--mono);letter-spacing:0.06em;text-transform:uppercase}
+.buy-roi-note{font-size:13px;color:rgba(255,255,255,0.35);margin-top:6px;font-style:italic}
+
+/* ── OBJECTIONS ── */
+.obj{padding:80px 48px;background:var(--ink);border-top:1px solid var(--border)}
+.obj-inner{max-width:960px;margin:0 auto}
+.obj-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;margin-top:48px}
+.obj-card{background:var(--dark);padding:28px 28px;transition:background 0.2s}
+.obj-card:hover{background:var(--mid)}
+.obj-q{font-family:var(--serif);font-size:16px;font-weight:700;color:var(--white);margin-bottom:10px;line-height:1.3}
+.obj-a{font-size:13px;color:var(--muted);line-height:1.65}
+
+/* ── SECOND PRODUCT ── */
+.second{padding:80px 48px;background:var(--black);border-top:1px solid var(--border)}
+.second-inner{max-width:960px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.second-label{font-family:var(--mono);font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
+.second-title{font-family:var(--serif);font-size:40px;font-weight:800;color:var(--white);line-height:1.05;margin-bottom:12px}
+.second-sub{font-size:15px;color:rgba(255,255,255,0.4);line-height:1.6;font-weight:300;margin-bottom:28px}
+.second-price{font-family:var(--serif);font-size:28px;font-weight:800;color:var(--faint);margin-bottom:20px}
+.second-price span{color:var(--white)}
+.btn-secondary{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--border);color:var(--faint);background:none;padding:13px 28px;font-family:var(--serif);font-size:14px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;border-radius:2px;cursor:pointer;transition:all 0.2s}
+.btn-secondary:hover{border-color:var(--faint);color:var(--white)}
+.second-right{background:var(--dark);border:1px solid var(--border);border-radius:3px;padding:36px}
+.second-list{display:flex;flex-direction:column;gap:12px}
+.second-item{display:flex;gap:12px;font-size:13px;color:rgba(255,255,255,0.45);line-height:1.5;padding-bottom:12px;border-bottom:1px solid var(--border)}
+.second-item:last-child{border-bottom:none;padding-bottom:0}
+.s-dot{width:4px;height:4px;border-radius:50%;background:var(--muted);flex-shrink:0;margin-top:6px}
+
+/* ── FOOTER ── */
+footer{padding:40px 48px;background:var(--ink);border-top:1px solid var(--border)}
+.footer-inner{max-width:960px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.footer-brand{font-family:var(--serif);font-size:13px;font-weight:700;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase}
+.footer-note{font-size:12px;color:var(--muted);font-family:var(--mono);letter-spacing:0.04em}
+.footer-links{display:flex;gap:24px}
+.footer-link{font-size:12px;color:var(--muted);text-decoration:none;font-family:var(--mono);letter-spacing:0.06em;text-transform:uppercase;transition:color 0.2s}
+.footer-link:hover{color:var(--light)}
+
+/* ── ANIMATIONS ── */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 0.65s cubic-bezier(0.4,0,0.2,1),transform 0.65s cubic-bezier(0.4,0,0.2,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:0.1s}
+.reveal-delay-2{transition-delay:0.2s}
+.reveal-delay-3{transition-delay:0.3s}
+
+/* ── RESPONSIVE ── */
+@media(max-width:768px){
+  nav{padding:14px 24px}
+  .hero{padding:100px 24px 60px}
+  .hero-h1{font-size:52px}
+  .pain,.cred,.systems,.roi,.inside,.buy,.obj,.second{padding:72px 24px}
+  .section-title{font-size:38px}
+  .pain-grid,.systems-grid,.obj-grid,.cred-inner,.inside-grid,.second-inner{grid-template-columns:1fr}
+  .roi-inputs,.roi-results{grid-template-columns:1fr}
+  .hero-proof{gap:20px}
+  .proof-div{display:none}
+  .buy-price{font-size:64px}
+}
+
+/* Testimonials */
+.testimonials{padding:100px 48px;background:var(--dark);position:relative;overflow:hidden}
+.testimonials::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,transparent,var(--green),transparent)}
+.test-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;margin-top:56px}
+.test-card{background:var(--ink);padding:36px 32px;position:relative;transition:background 0.2s}
+.test-card:hover{background:var(--mid)}
+.test-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(to right,var(--green),transparent);opacity:0.4;transition:opacity 0.2s}
+.test-card:hover::before{opacity:1}
+.test-quote{font-size:15px;color:rgba(255,255,255,0.75);line-height:1.75;font-style:italic;margin-bottom:24px;position:relative;padding-left:20px}
+.test-quote::before{content:'"';font-family:var(--serif);font-size:48px;color:var(--green);opacity:0.4;position:absolute;left:-4px;top:-12px;line-height:1}
+.test-divider{width:32px;height:1px;background:var(--green);opacity:0.4;margin-bottom:16px}
+.test-role{font-family:var(--mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--green);opacity:0.8;margin-bottom:4px}
+.test-company{font-family:var(--serif);font-size:14px;font-weight:600;color:rgba(255,255,255,0.5)}
+@media(max-width:768px){.test-grid{grid-template-columns:1fr}}
+
+.test-logo{
+  height:18px;
+  width:auto;
+  margin-top:12px;
+  opacity:0.35;
+  display:block;
+  filter:brightness(0) invert(1);
+  transition:opacity 0.2s;
+}
+.test-card:hover .test-logo{opacity:0.55}
+
+.test-logo-svg{
+  height:20px;
+  width:auto;
+  margin-top:14px;
+  display:block;
+  opacity:0.8;
+  transition:opacity 0.2s;
+}
+.test-card:hover .test-logo-svg{opacity:1}
+
+.test-wordmark{
+  display:inline-block;
+  margin-top:14px;
+  font-family:var(--mono);
+  font-size:10px;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,0.35);
+  border:1px solid rgba(255,255,255,0.12);
+  padding:4px 10px;
+  border-radius:2px;
+  transition:color 0.2s,border-color 0.2s;
+}
+.test-card:hover .test-wordmark{
+  color:rgba(255,255,255,0.55);
+  border-color:rgba(255,255,255,0.2);
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">The AE's AI Playbook</div>
+  <button class="nav-cta" onclick="window.location.href='https://buy.stripe.com/fZubJ10EnfY6bGg6vE1Jm00'">Get the Playbook — $47</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div class="hero-kicker reveal">
+      <div class="hero-kicker-dot"></div>
+      <span class="hero-kicker-text">SaaS AEs · 2026 Edition · $60M Closed Between Authors</span>
+    </div>
+    <h1 class="hero-h1 reveal reveal-delay-1">
+      Stop doing<br>
+      <span class="acc">admin.</span><br>
+      <span class="dim">Start closing.</span>
+    </h1>
+    <p class="hero-sub reveal reveal-delay-2">You're spending <strong>65% of your week on tasks that aren't selling.</strong> This AI playbook for SaaS AEs gives you three copy-paste AI prompts for account executives that automate post-call follow-up, pre-call research and pipeline review — putting 10+ hours of selling time back in your week.</p>
+    <div class="hero-actions reveal reveal-delay-3">
+      <button class="btn-primary" onclick="document.getElementById('buy').scrollIntoView({behavior:'smooth'})">
+        Get the Playbook — $47
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+      <button class="btn-ghost" onclick="document.getElementById('systems').scrollIntoView({behavior:'smooth'})">See what's inside</button>
+    </div>
+    <div class="hero-proof reveal">
+      <div class="proof-stat">
+        <div class="proof-num">$<span class="g">60M</span></div>
+        <div class="proof-label">ACV closed by authors</div>
+      </div>
+      <div class="proof-div"></div>
+      <div class="proof-stat">
+        <div class="proof-num"><span class="g">10</span>hrs</div>
+        <div class="proof-label">Saved per week</div>
+      </div>
+      <div class="proof-div"></div>
+      <div class="proof-stat">
+        <div class="proof-num"><span class="g">3</span></div>
+        <div class="proof-label">AI systems built</div>
+      </div>
+      <div class="proof-div"></div>
+      <div class="proof-stat">
+        <div class="proof-num"><span class="g">0</span></div>
+        <div class="proof-label">Lines of code required</div>
+      </div>
+      <div class="proof-div"></div>
+      <div class="proof-stat">
+        <div class="proof-num"><span class="g">30</span>min</div>
+        <div class="proof-label">To full setup</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAIN -->
+<section class="pain">
+  <div class="section-inner">
+    <div class="section-label reveal">The problem</div>
+    <h2 class="section-title reveal reveal-delay-1">Your quota is real.<br><span class="dim">Your admin is theft.</span></h2>
+    <div class="pain-grid">
+      <div class="pain-card reveal">
+        <div class="pain-icon">01</div>
+        <div class="pain-title">You finish a call and immediately owe the CRM 20 minutes</div>
+        <div class="pain-body">Update the stage. Log the outcome. Write the next steps. Add the contact notes. Before you've even had time to think about what just happened in the call, Salesforce is waiting.</div>
+      </div>
+      <div class="pain-card reveal reveal-delay-1">
+        <div class="pain-icon">02</div>
+        <div class="pain-title">Your follow-up emails all sound the same because you wrote them under pressure</div>
+        <div class="pain-body">Five calls a day, each needing a personalised follow-up. By the fourth one you're copying from the third. The personalisation is gone. The prospect can tell. The reply rate reflects it.</div>
+      </div>
+      <div class="pain-card reveal reveal-delay-2">
+        <div class="pain-icon">03</div>
+        <div class="pain-title">Friday afternoon disappears into pipeline admin every single week</div>
+        <div class="pain-body">Forecast calls tomorrow. Your pipeline looks nothing like reality. You spend two hours pulling it together manually from memory. By the time it's done, the afternoon is gone.</div>
+      </div>
+      <div class="pain-card reveal reveal-delay-3">
+        <div class="pain-icon">04</div>
+        <div class="pain-title">You prep for calls by tab-hopping for 30 minutes and still feel underprepared</div>
+        <div class="pain-body">LinkedIn. Crunchbase. Google News. Their website. Their competitors' websites. Thirty minutes of research that produces surface-level facts, not the insight that would actually change how the call goes.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDIBILITY -->
+<section class="cred">
+  <div class="cred-inner">
+    <div class="cred-left reveal">
+      <div class="section-label">Who wrote this</div>
+      <h2 class="section-title">Written from<br><span class="dim">inside the quota.</span></h2>
+      <div class="cred-stat-block">
+        <div class="cred-big-num">$60M+</div>
+        <div class="cred-big-sub">in SaaS ACV closed between two authors — across enterprise and mid-market deals, under real quota pressure, with real pipeline on the line.</div>
+      </div>
+    </div>
+    <div class="cred-right reveal reveal-delay-1">
+      <blockquote class="cred-quote">"We didn't write this from theory. We wrote it from inside a quota-carrying sales role, with commission on the line. Every prompt in this book is in our libraries right now."</blockquote>
+      <div class="cred-points">
+        <div class="cred-point"><div class="cred-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Every system personally built and tested in live deals</div>
+        <div class="cred-point"><div class="cred-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>No code. No IT. No workflow builders. Just a browser.</div>
+        <div class="cred-point"><div class="cred-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>All tools free to start — paid upgrades optional</div>
+        <div class="cred-point"><div class="cred-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Written specifically for mid-level SaaS AEs on quota</div>
+        <div class="cred-point"><div class="cred-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>30 pages. Dense. No padding. Actionable from page one.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="section-inner">
+    <div class="section-label reveal">What AEs are saying</div>
+    <h2 class="section-title reveal reveal-delay-1">Used in live deals.<br><span class="dim">Verified by quota carriers.</span></h2>
+    <div class="test-grid">
+      <div class="test-card reveal">
+        <div class="test-quote">"This playbook held up a mirror to exactly how much selling time I was losing to admin every week. More importantly, it gave me a clear and structured path to take it back. The ROI was obvious within days."</div>
+        <div class="test-divider"></div>
+        <div class="test-role">Enterprise Account Executive</div>
+        <div class="test-company">Databricks</div>
+        <span class="test-wordmark">Databricks</span>
+      </div>
+      <div class="test-card reveal reveal-delay-1">
+        <div class="test-quote">"The prompt library is the best thing about this. It gave me the clarity and structure I had been missing to actually get useful results from AI tools. Built specifically for software sales, not generic productivity advice."</div>
+        <div class="test-divider"></div>
+        <div class="test-role">Commercial Account Representative</div>
+        <div class="test-company">Amazon Web Services</div>
+        <span class="test-wordmark">Amazon Web Services</span>
+      </div>
+      <div class="test-card reveal reveal-delay-2">
+        <div class="test-quote">"I am not a technical person by nature and this was built for people like me. No code, no complexity, just systems that work. The book paid for itself ten times over in the first week."</div>
+        <div class="test-divider"></div>
+        <div class="test-role">Strategic Account Director</div>
+        <div class="test-company">MongoDB</div>
+        <span class="test-wordmark">MongoDB</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SYSTEMS -->
+<section class="systems" id="systems">
+  <div class="systems-inner">
+    <div class="section-label reveal">Three AI systems for SaaS AEs</div>
+    <h2 class="section-title reveal reveal-delay-1">The admin that's eating<br><span class="dim">your week. Automated.</span></h2>
+    <div class="systems-grid">
+      <div class="sys-card reveal">
+        <div class="sys-num">System 01</div>
+        <div class="sys-title">The Follow-Up That Writes Itself</div>
+        <div class="sys-desc">Fathom records and logs your call to the CRM automatically. Five AI prompts for account executives turn any call transcript into a personalised post-call follow-up email in 60 seconds.</div>
+        <div class="sys-saves"><span class="sys-saves-text">Saves 6hrs per week</span></div>
+        <div class="sys-items">
+          <div class="sys-item"><div class="sys-dot"></div>5 prompts for every deal stage</div>
+          <div class="sys-item"><div class="sys-dot"></div>CRM update prompt included</div>
+          <div class="sys-item"><div class="sys-dot"></div>2-minute quality review checklist</div>
+        </div>
+      </div>
+      <div class="sys-card reveal reveal-delay-1">
+        <div class="sys-num">System 02</div>
+        <div class="sys-title">The 5-Minute Pre-Call Brief</div>
+        <div class="sys-desc">Two searches and one AI prompt deliver a structured six-point pre-call research brief on any prospect — company context, pain points, objection prediction, and a sharp opening question. Pre-call research for SaaS AEs in under five minutes.</div>
+        <div class="sys-saves"><span class="sys-saves-text">Saves 6hrs per week</span></div>
+        <div class="sys-items">
+          <div class="sys-item"><div class="sys-dot"></div>Better prep than 30 mins manual research</div>
+          <div class="sys-item"><div class="sys-dot"></div>Multi-stakeholder brief variant included</div>
+          <div class="sys-item"><div class="sys-dot"></div>Account brief library system</div>
+        </div>
+      </div>
+      <div class="sys-card reveal reveal-delay-2">
+        <div class="sys-num">System 03</div>
+        <div class="sys-title">The 20-Minute Pipeline Review</div>
+        <div class="sys-desc">Three prompts replace two hours of Friday pipeline admin. Deal health check. Manager report that writes itself. Stale deal re-engagement email drafted and ready to send.</div>
+        <div class="sys-saves"><span class="sys-saves-text">Saves 2hrs per week</span></div>
+        <div class="sys-items">
+          <div class="sys-item"><div class="sys-dot"></div>Pipeline dump and deal health check</div>
+          <div class="sys-item"><div class="sys-dot"></div>Manager report prompt included</div>
+          <div class="sys-item"><div class="sys-dot"></div>Stale deal re-engagement prompt</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROI CALCULATOR -->
+<section class="roi">
+  <div class="roi-glow"></div>
+  <div class="roi-inner">
+    <div class="section-label reveal" style="text-align:center">ROI Calculator</div>
+    <h2 class="section-title reveal reveal-delay-1" style="text-align:center;font-size:48px;">What is your admin<br><span class="dim">actually costing you?</span></h2>
+    <div class="roi-card reveal reveal-delay-2">
+      <div class="roi-inputs">
+        <div class="roi-field">
+          <label>Your OTE ($)</label>
+          <input type="number" id="ote" value="120000" oninput="calcROI()">
+        </div>
+        <div class="roi-field">
+          <label>Calls per day</label>
+          <input type="number" id="calls" value="4" min="1" max="20" oninput="calcROI()">
+        </div>
+      </div>
+      <div class="roi-results" id="results">
+        <div class="roi-result">
+          <div class="roi-result-val" id="r1">$57</div>
+          <div class="roi-result-label">Your hourly rate</div>
+        </div>
+        <div class="roi-result">
+          <div class="roi-result-val" id="r2">$2,280</div>
+          <div class="roi-result-label">Weekly selling time lost to admin</div>
+        </div>
+        <div class="roi-result highlight">
+          <div class="roi-result-val" id="r3">48x</div>
+          <div class="roi-result-label">Return on this $47 playbook</div>
+        </div>
+      </div>
+      <div class="roi-conclusion" id="conclusion">
+        <div class="roi-conclusion-text">At your OTE, you're losing approximately <strong id="c1">$2,280</strong> in selling time to admin every week. This playbook costs <strong>$47</strong> and returns <strong id="c2">10+ hours</strong> in week one. That's a <strong id="c3">48x</strong> return in the first seven days.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S INSIDE -->
+<section class="inside">
+  <div class="inside-inner">
+    <div class="section-label reveal">What's inside</div>
+    <h2 class="section-title reveal reveal-delay-1">30 pages.<br><span class="dim">No padding.</span></h2>
+    <div class="inside-grid">
+      <div class="inside-list reveal reveal-delay-1">
+        <div class="inside-row">
+          <span class="inside-row-num">INTRO</span>
+          <div><div class="inside-row-title">You're a closer, not a data entry clerk</div><div class="inside-row-desc">The real cost of admin at your OTE. What the next 30 pages will change.</div></div>
+        </div>
+        <div class="inside-row">
+          <span class="inside-row-num">CH 01</span>
+          <div><div class="inside-row-title">The admin audit</div><div class="inside-row-desc">20-minute tally to find exactly where your time is going. Includes the tracking sheet.</div></div>
+        </div>
+        <div class="inside-row">
+          <span class="inside-row-num">CH 02</span>
+          <div><div class="inside-row-title">Your no-code AI toolkit</div><div class="inside-row-desc">Four tools, free tiers, 30-minute setup. Fathom, Perplexity, Claude, your CRM.</div></div>
+        </div>
+        <div class="inside-row">
+          <span class="inside-row-num">CH 03</span>
+          <div><div class="inside-row-title">System 1 — the follow-up</div><div class="inside-row-desc">Five deal-stage prompts plus a CRM update prompt. Copy, paste, send.</div></div>
+        </div>
+        <div class="inside-row">
+          <span class="inside-row-num">CH 04</span>
+          <div><div class="inside-row-title">System 2 — the pre-call brief</div><div class="inside-row-desc">Two searches, one prompt, five minutes. Better than 30 minutes of tab-hopping.</div></div>
+        </div>
+        <div class="inside-row">
+          <span class="inside-row-num">CH 05</span>
+          <div><div class="inside-row-title">System 3 — the pipeline review</div><div class="inside-row-desc">Deal health check, manager report, stale deal re-engagement. All three prompts included.</div></div>
+        </div>
+        <div class="inside-row">
+          <span class="inside-row-num">CLOSE</span>
+          <div><div class="inside-row-title">Make it count</div><div class="inside-row-desc">30-day check-in, your positioning statement, and three advanced plays to build next.</div></div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="inside-prompts">
+          <div class="inside-prompts-title">12 copy-paste prompts included</div>
+          <div>
+            <span class="prompt-tag">Discovery follow-up</span>
+            <span class="prompt-tag">Demo follow-up</span>
+            <span class="prompt-tag">Objection follow-up</span>
+            <span class="prompt-tag">Commercial follow-up</span>
+            <span class="prompt-tag">No-decision follow-up</span>
+            <span class="prompt-tag">CRM update</span>
+            <span class="prompt-tag">Pre-call brief</span>
+            <span class="prompt-tag">Pipeline dump</span>
+            <span class="prompt-tag">Deal health check</span>
+            <span class="prompt-tag">Manager report</span>
+            <span class="prompt-tag">Stale deal re-engage</span>
+            <span class="prompt-tag">Positioning statement</span>
+          </div>
+          <div class="inside-bonus">
+            <div class="inside-bonus-label">Bonus</div>
+            <div class="inside-bonus-text">Every prompt works with Claude or ChatGPT. Free tiers only. No subscriptions required to get started. Upgrade later if you want — but you don't have to.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUY -->
+<section class="buy" id="buy">
+  <div class="buy-glow"></div>
+  <div class="buy-inner">
+    <div class="buy-eyebrow reveal">Get the playbook</div>
+    <h2 class="buy-title reveal reveal-delay-1">One payment.<br>10 hours back.</h2>
+    <p class="buy-sub reveal reveal-delay-2">Built by two AEs who have closed $60M in SaaS contracts. Used in live deals. Proven in real pipeline.</p>
+    <div class="buy-card reveal reveal-delay-2">
+      <div class="buy-price-wrap">
+        <span class="buy-currency">$</span>
+        <span class="buy-price">47</span>
+      </div>
+      <div class="buy-price-note">One-time payment · Instant download</div>
+      <div class="buy-includes">
+        <div class="buy-include"><div class="buy-include-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>The AE's AI Playbook — full 30-page interactive ebook</div>
+        <div class="buy-include"><div class="buy-include-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>12 copy-paste prompts covering every admin scenario</div>
+        <div class="buy-include"><div class="buy-include-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Admin time audit tally sheet</div>
+        <div class="buy-include"><div class="buy-include-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>4-tool no-code setup guide</div>
+        <div class="buy-include"><div class="buy-include-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Works with free tiers of all tools — no paid subscriptions needed</div>
+        <div class="buy-include"><div class="buy-include-icon"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>30-minute setup. 10+ hours saved in week one.</div>
+      </div>
+      <button class="buy-btn" onclick="window.location.href='https://buy.stripe.com/fZubJ10EnfY6bGg6vE1Jm00'">
+        Buy Now — $47
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+      <div class="buy-guarantee">Instant download · PDF + interactive HTML</div>
+      <div class="buy-roi-note">At $120k OTE this pays for itself in 50 minutes of recovered selling time</div>
+    </div>
+  </div>
+</section>
+
+<!-- OBJECTIONS -->
+<section class="obj">
+  <div class="obj-inner">
+    <div class="section-label reveal">Common questions</div>
+    <div class="obj-grid">
+      <div class="obj-card reveal">
+        <div class="obj-q">Do I need to be technical to use this?</div>
+        <div class="obj-a">No. Every system is built from copy-paste prompts and free tools that install from a browser. If you can open a new tab, you can run these systems. Zero code. Zero IT. Zero workflow builders.</div>
+      </div>
+      <div class="obj-card reveal reveal-delay-1">
+        <div class="obj-q">Will this work with my CRM?</div>
+        <div class="obj-a">Fathom connects natively to Salesforce, HubSpot, and most major CRMs. The prompt systems work independently of your CRM — you paste output directly in. If Fathom doesn't connect to yours, the prompt systems still save you hours.</div>
+      </div>
+      <div class="obj-card reveal reveal-delay-2">
+        <div class="obj-q">How long does setup actually take?</div>
+        <div class="obj-a">30 minutes for the full toolkit. Fathom takes 8 minutes to connect. Perplexity and Claude accounts take 5 minutes each. Your first follow-up prompt is live before your next call.</div>
+      </div>
+      <div class="obj-card reveal">
+        <div class="obj-q">Is this just a generic AI book?</div>
+        <div class="obj-a">No. This is written specifically for mid-level SaaS AEs on quota. Every system, every prompt, and every example is built around the exact workflow of someone running a full sales cycle with five calls a day.</div>
+      </div>
+      <div class="obj-card reveal reveal-delay-1">
+        <div class="obj-q">What if my company doesn't allow AI tools?</div>
+        <div class="obj-a">The prompt systems work with any AI tool including enterprise-licensed versions of Claude, ChatGPT, or Gemini. Most companies have at least one approved AI tool — these prompts work with all of them.</div>
+      </div>
+      <div class="obj-card reveal reveal-delay-2">
+        <div class="obj-q">What does $47 actually buy me?</div>
+        <div class="obj-a">At $120k OTE, one recovered hour of selling time is worth ~$57. This playbook saves 10+ hours in week one. That's a 12x return before you finish reading it. At $47, the question isn't whether it's worth it.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECOND PRODUCT -->
+<section class="second">
+  <div class="second-inner">
+    <div class="reveal">
+      <div class="second-label">Also available</div>
+      <h3 class="second-title">The AI Advantage</h3>
+      <p class="second-sub">Not a SaaS AE? This is the playbook for any professional who uses AI daily but isn't seeing real results. The FOBO audit, role-mapped tool stacks, the 4-part prompt formula, and the AI impact log — built for the general professional workforce.</p>
+      <div class="second-price"><span>$19</span> · One-time</div>
+      <button class="btn-secondary" onclick="window.location.href='https://buy.stripe.com/eVqfZhgDl7rAeSs7zI1Jm01'">
+        Get The AI Advantage — $19
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+    <div class="second-right reveal reveal-delay-1">
+      <div class="second-list">
+        <div class="second-item"><div class="s-dot"></div>The FOBO audit — find out exactly where you stand with a 9-question scorecard</div>
+        <div class="second-item"><div class="s-dot"></div>Role-mapped tool stacks for 6 professional archetypes — marketer, sales, PM, finance, HR, creative</div>
+        <div class="second-item"><div class="s-dot"></div>The 4-part prompt formula that improves every AI interaction immediately</div>
+        <div class="second-item"><div class="s-dot"></div>The AI impact log — turn invisible competence into career-visible results</div>
+        <div class="second-item"><div class="s-dot"></div>90-day sprint plan with weekly milestones</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">The AE's AI Playbook</div>
+    <div class="footer-note">© 2026 · All rights reserved · AI Playbook for SaaS AEs · AI Prompts for Account Executives</div>
+    <div class="footer-links">
+      <a href="#" class="footer-link">Privacy</a>
+      <a href="#" class="footer-link">Terms</a>
+      <a href="#" class="footer-link">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if(e.isIntersecting){ e.target.classList.add('visible'); observer.unobserve(e.target); }
+  });
+},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// ROI Calculator
+function calcROI(){
+  const ote = parseFloat(document.getElementById('ote').value) || 120000;
+  const calls = parseFloat(document.getElementById('calls').value) || 4;
+  const hourly = Math.round(ote / 52 / 40);
+  const adminHrsPerCall = 0.42;
+  const weeklyAdminHrs = calls * 5 * adminHrsPerCall;
+  const weeklyCost = Math.round(weeklyAdminHrs * hourly);
+  const roi = Math.round(weeklyCost / 47);
+
+  document.getElementById('r1').textContent = '$' + hourly;
+  document.getElementById('r2').textContent = '$' + weeklyCost.toLocaleString();
+  document.getElementById('r3').textContent = roi + 'x';
+  document.getElementById('c1').textContent = '$' + weeklyCost.toLocaleString();
+  document.getElementById('c2').textContent = '10+ hours';
+  document.getElementById('c3').textContent = roi + 'x';
+}
+calcROI();
+</script>
+
+</body>
+</html>
