@@ -1,6 +1,7 @@
 {
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
+    { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
     { "source": "/ae-ai-playbook", "destination": "/ae-ai-playbook.html" },
     { "source": "/ai-advantage-ebook", "destination": "/ai-advantage-ebook.html" },
     { "source": "/thank-you", "destination": "/thank-you.html" },
@@ -15,6 +16,12 @@
       "source": "/ae-ai-playbook.html",
       "headers": [
         { "key": "Content-Disposition", "value": "attachment; filename=The-AEs-AI-Playbook.html" }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        { "key": "Content-Type", "value": "application/xml" }
       ]
     }
   ]
