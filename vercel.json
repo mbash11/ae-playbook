@@ -4,7 +4,12 @@
     { "source": "/", "destination": "/index.html" },
     { "source": "/ae-ai-playbook", "destination": "/ae-ai-playbook.html" },
     { "source": "/ai-advantage-ebook", "destination": "/ai-advantage-ebook.html" },
-    { "source": "/thank-you", "destination": "/thank-you.html" }
+    { "source": "/thank-you", "destination": "/thank-you.html" },
+    { "source": "/blog/ai-tools-for-account-executives", "destination": "/blog-1.html" },
+    { "source": "/blog/ai-post-call-follow-up", "destination": "/blog-2.html" },
+    { "source": "/blog/best-ai-prompts-for-saas-sales", "destination": "/blog-3.html" },
+    { "source": "/blog/cut-crm-admin-time-ai", "destination": "/blog-4.html" },
+    { "source": "/blog/pre-call-research-ai-saas-aes", "destination": "/blog-5.html" }
   ],
   "headers": [
     {
