@@ -1,7 +1,9 @@
 {
+  "redirects": [
+    { "source": "/:path*", "destination": "https://www.saasaiplaybook.com/:path*", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
-    { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
     { "source": "/ae-ai-playbook", "destination": "/ae-ai-playbook.html" },
     { "source": "/ai-advantage-ebook", "destination": "/ai-advantage-ebook.html" },
     { "source": "/thank-you", "destination": "/thank-you.html" },
