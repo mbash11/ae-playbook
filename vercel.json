@@ -1,7 +1,4 @@
 {
-  "redirects": [
-    { "source": "/:path*", "destination": "https://www.saasaiplaybook.com/:path*", "permanent": true }
-  ],
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
     { "source": "/ae-ai-playbook", "destination": "/ae-ai-playbook.html" },
