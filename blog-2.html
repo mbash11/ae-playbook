@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Use AI for Post-Call Follow-Up — A SaaS AE's Guide</title>
+<meta name="description" content="Stop spending 25 minutes on post-call admin. Here is exactly how to use AI for post-call follow-up as a SaaS AE — five copy-paste prompts that handle your CRM and email in under five minutes.">
+<meta name="keywords" content="AI post-call follow-up sales, AI follow-up email SaaS, post-call admin AI, sales follow-up automation, AI CRM update sales">
+<link rel="canonical" href="https://www.saasaiplaybook.com/blog/ai-post-call-follow-up">
+<meta property="og:title" content="How to Use AI for Post-Call Follow-Up — A SaaS AE's Guide">
+<meta property="og:description" content="Five copy-paste AI prompts that handle your post-call follow-up email and CRM notes in under five minutes.">
+<meta property="og:url" content="https://www.saasaiplaybook.com/blog/ai-post-call-follow-up">
+<meta property="og:image" content="https://www.saasaiplaybook.com/ae-playbook-og.png">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--black:#080807;--ink:#0f0e0c;--dark:#171614;--border:#2e2c28;--muted:#6a6860;--faint:#9a9890;--light:#e0dcd4;--white:#faf8f4;--green:#22a35a;--green-soft:#4dc97e;--serif:'Barlow Condensed',sans-serif;--body:'Barlow',sans-serif;--mono:'JetBrains Mono',monospace}
+html,body{background:var(--black);font-family:var(--body);-webkit-font-smoothing:antialiased;color:var(--light)}
+.topbar{background:var(--ink);border-bottom:1px solid var(--border);padding:16px 40px;display:flex;align-items:center;justify-content:space-between}
+.tb-brand{font-family:var(--serif);font-size:13px;font-weight:700;color:var(--faint);letter-spacing:0.08em;text-transform:uppercase;text-decoration:none}
+.tb-cta{background:var(--green);color:white;padding:8px 18px;font-family:var(--serif);font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:background 0.2s}
+.tb-cta:hover{background:var(--green-soft)}
+.hero{background:var(--ink);padding:80px 40px 60px;text-align:center;border-bottom:1px solid var(--border)}
+.hero-kicker{font-family:var(--mono);font-size:11px;letter-spacing:0.18em;color:var(--green);text-transform:uppercase;margin-bottom:16px}
+.hero-title{font-family:var(--serif);font-size:52px;font-weight:900;color:var(--white);line-height:1.05;max-width:700px;margin:0 auto 20px}
+.hero-sub{font-size:17px;color:rgba(255,255,255,0.5);max-width:580px;margin:0 auto;line-height:1.65;font-weight:300}
+.article{max-width:720px;margin:0 auto;padding:60px 40px 100px}
+.article h2{font-family:var(--serif);font-size:28px;font-weight:800;color:var(--white);margin:40px 0 12px;line-height:1.2}
+.article h3{font-family:var(--serif);font-size:20px;font-weight:700;color:var(--white);margin:28px 0 10px}
+.article p{font-size:16px;line-height:1.8;color:rgba(255,255,255,0.65);margin-bottom:18px}
+.article strong{color:var(--white);font-weight:500}
+.article ul{list-style:none;margin:12px 0 20px}
+.article ul li{font-size:15px;color:rgba(255,255,255,0.65);padding:8px 0 8px 20px;position:relative;border-bottom:1px solid var(--border);line-height:1.6}
+.article ul li:last-child{border-bottom:none}
+.article ul li::before{content:'';position:absolute;left:0;top:16px;width:5px;height:5px;border-radius:50%;background:var(--green)}
+.prompt-box{background:var(--dark);border-radius:3px;padding:22px 26px;margin:18px 0;border-left:3px solid var(--green)}
+.prompt-label{font-family:var(--mono);font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:var(--green);margin-bottom:10px}
+.prompt-text{font-size:13px;color:rgba(255,255,255,0.75);line-height:1.72;font-style:italic}
+.prompt-text strong{color:var(--green-soft);font-style:normal}
+.stat-box{background:var(--dark);border-radius:3px;padding:24px 28px;margin:22px 0;display:flex;gap:20px;align-items:center}
+.stat-num{font-family:var(--serif);font-size:52px;font-weight:800;color:var(--green);flex-shrink:0;line-height:1}
+.stat-copy{font-size:14px;color:rgba(255,255,255,0.6);line-height:1.6}
+.stat-copy strong{color:rgba(255,255,255,0.9);display:block;margin-bottom:4px}
+.callout{background:rgba(34,163,90,0.07);border-left:3px solid var(--green);padding:18px 22px;margin:24px 0}
+.callout p{margin:0;font-size:15px;color:rgba(255,255,255,0.75);line-height:1.65}
+.cta-block{background:var(--dark);border:1px solid var(--border);border-radius:3px;padding:40px;margin:48px 0;text-align:center}
+.cta-block h2{font-family:var(--serif);font-size:34px;font-weight:800;color:var(--white);margin-bottom:12px}
+.cta-block p{font-size:15px;color:rgba(255,255,255,0.5);margin-bottom:24px;line-height:1.65}
+.cta-btn{display:inline-flex;align-items:center;gap:10px;background:var(--green);color:white;padding:14px 28px;font-family:var(--serif);font-size:14px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:background 0.2s}
+.cta-btn:hover{background:var(--green-soft)}
+.divider{border:none;border-top:1px solid var(--border);margin:36px 0}
+.footer{background:var(--ink);border-top:1px solid var(--border);padding:32px 40px;text-align:center}
+.footer p{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:0.06em}
+.footer a{color:var(--muted);text-decoration:none}
+.footer a:hover{color:var(--light)}
+@media(max-width:600px){.hero{padding:48px 24px 40px}.hero-title{font-size:36px}.article{padding:40px 24px 60px}.topbar{padding:14px 20px}.cta-block{padding:28px 20px}}
+</style>
+</head>
+<body>
+<nav class="topbar">
+  <a href="https://www.saasaiplaybook.com" class="tb-brand">SaaS AI Playbook</a>
+  <a href="https://www.saasaiplaybook.com" class="tb-cta">Get the Playbook — $29</a>
+</nav>
+<header class="hero">
+  <div class="hero-kicker">Guide · Post-Call Follow-Up</div>
+  <h1 class="hero-title">How to Use AI for Post-Call Follow-Up as a SaaS AE</h1>
+  <p class="hero-sub">Five copy-paste prompts that handle your follow-up email and CRM notes in under five minutes. No more losing 25 minutes after every call to admin.</p>
+</header>
+<article class="article">
+  <p>Post-call admin is one of the biggest silent killers of selling time for SaaS account executives. After a one-hour call, most AEs spend an additional 20 to 25 minutes updating their CRM, writing a follow-up email, and logging next steps. At four calls per day that is up to two hours of post-call admin before you have done anything proactive.</p>
+  <p>AI changes this equation completely. With the right setup, post-call follow-up as a SaaS AE takes five minutes rather than twenty-five. Here is exactly how to do it.</p>
+
+  <div class="stat-box">
+    <div class="stat-num">25</div>
+    <div class="stat-copy"><strong>Minutes lost per call on post-call admin.</strong>At four calls per day, that is 100 minutes of admin time before you have sent a single proactive outreach. AI reduces this to five minutes per call — returning roughly six hours of selling time per week from this task alone.</div>
+  </div>
+
+  <h2>Step 1 — Set up Fathom for automatic CRM logging</h2>
+  <p>Before anything else, install Fathom at fathom.video. It is free with no call limits. Connect it to your calendar and your CRM during setup — the process takes eight minutes.</p>
+  <p>From that point forward, every call you take through your calendar will be automatically recorded, transcribed, and summarised. Fathom pushes the summary directly to your CRM as a logged activity, updates the contact record, and captures the key discussion points and next steps from the conversation.</p>
+  <p>You do not need to do anything during or after the call for this to happen. The CRM is updated before you have opened your laptop to start typing.</p>
+
+  <h2>Step 2 — Use the Fathom summary as your AI input</h2>
+  <p>After your call ends, Fathom sends you a summary email and makes the transcript available in its dashboard. This summary is the input for every AI follow-up prompt below. Copy it and paste it directly into Claude or ChatGPT.</p>
+  <p>Do not paste raw transcripts. The summary is cleaner, more structured, and produces significantly better output from your AI tool than an unedited transcript.</p>
+
+  <h2>The five post-call follow-up prompts</h2>
+  <p>Save all five of these in a document you can access from any device. Over time you will know which one to reach for based on the type of call you just had.</p>
+
+  <div class="prompt-box">
+    <div class="prompt-label">Prompt 1 — After a discovery call</div>
+    <div class="prompt-text">"You are an experienced SaaS AE. I just finished a discovery call. Here is the summary: <strong>[paste Fathom summary]</strong>. My product helps <strong>[company type]</strong> with <strong>[value prop]</strong>. Write a follow-up email under 200 words. Conversational tone. Thanks them briefly, summarises key discussion points, confirms next steps, ends with a clear CTA."</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="prompt-label">Prompt 2 — After a demo</div>
+    <div class="prompt-text">"SaaS AE here. Just delivered a demo. Summary: <strong>[paste Fathom summary]</strong>. Prospect most interested in <strong>[feature]</strong>. Main concern: <strong>[objection]</strong>. Write a follow-up under 200 words that acknowledges their interest, addresses the concern briefly, and proposes a next step."</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="prompt-label">Prompt 3 — After an objection-heavy call</div>
+    <div class="prompt-text">"SaaS AE. Tough call with several objections. Summary: <strong>[paste Fathom summary]</strong>. Biggest objection: <strong>[objection]</strong>. Write a follow-up under 180 words. Acknowledge honestly, offer one supporting point, propose a specific next step. Not defensive. Not overselling."</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="prompt-label">Prompt 4 — After a commercial conversation</div>
+    <div class="prompt-text">"SaaS AE. Commercial conversation, prospect close to decision. Summary: <strong>[paste Fathom summary]</strong>. We discussed pricing and <strong>[what was agreed]</strong>. Write a follow-up under 200 words confirming what was discussed, next steps with owners, tone of confidence not pressure."</div>
+  </div>
+
+  <div class="prompt-box">
+    <div class="prompt-label">Prompt 5 — When nothing was decided</div>
+    <div class="prompt-text">"SaaS AE. Call with no clear next step agreed. Summary: <strong>[paste Fathom summary]</strong>. Write a follow-up under 150 words. Honest about where we are, proposes a specific next step with timeframe, keeps door open without being desperate."</div>
+  </div>
+
+  <h2>The CRM notes prompt</h2>
+  <p>In addition to the follow-up email, use this prompt to generate structured CRM notes you can paste directly into your opportunity record:</p>
+
+  <div class="prompt-box">
+    <div class="prompt-label">CRM notes prompt</div>
+    <div class="prompt-text">"Here is a summary of a sales call I just had: <strong>[paste Fathom summary]</strong>. Write structured CRM notes covering: current deal stage, key discussion points (3 bullets max), main objection raised, agreed next steps with owner and timeframe, deal health rating 1-10 with one sentence of reasoning."</div>
+  </div>
+
+  <h2>What this saves you</h2>
+  <ul>
+    <li>Post-call time drops from 25 minutes to five minutes per call</li>
+    <li>At four calls per day you recover 80 minutes of selling time daily</li>
+    <li>Over a five-day week that is approximately six hours returned to pipeline activity</li>
+    <li>At a $180K OTE that is roughly $522 in selling time recovered every week from this system alone</li>
+  </ul>
+
+  <div class="callout"><p>The most common mistake AEs make when starting with AI follow-up prompts is using them once, getting a mediocre output, and going back to writing manually. The quality of these prompts improves significantly once you customise the bracketed fields with specific details. A generic prompt gets generic output. A specific prompt gets output you can send with minimal editing.</p></div>
+
+  <hr class="divider">
+
+  <div class="cta-block">
+    <h2>All five prompts plus two more systems</h2>
+    <p>The AE's AI Playbook includes the five follow-up prompts above, a full pre-call research system, and a pipeline review system — all copy-paste ready. Built by two AEs who have closed $60M in SaaS contracts.</p>
+    <a href="https://buy.stripe.com/fZubJ10EnfY6bGg6vE1Jm00" class="cta-btn">Get the Playbook — $29 →</a>
+  </div>
+</article>
+<footer class="footer">
+  <p><a href="https://www.saasaiplaybook.com">saasaiplaybook.com</a> · © 2026 SaaS AI Playbook · All rights reserved</p>
+</footer>
+</body>
+</html>
